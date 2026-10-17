@@ -1,0 +1,5 @@
+init -> inicia um repositorio vazio
+status -> verifica o status do repositorio agora
+add (nome do arquivo) -> adiciona um arquivo "staged" (que façara qie o git o monitore) (trocar "nome do arquivo" trocar o nome do arquivo pelo o seu sem usar os parnteses)
+remove -> Remove um arquivo "staged"
+commit -m -> cria uma mensagem nos arquivos que foram addicionados deixando-os "prontos"
