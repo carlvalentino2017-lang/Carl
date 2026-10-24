@@ -1,1 +1,78 @@
 pi = 3.141592653589793
+gravidade = 0
+jump = 0.01
+jump3 = 1
+jump2 = input("Digite se vc quer que rode? (digite s para sim) ")
+if jump2 == "s":
+    jump1 = True
+elif jump2 != "s":
+    jump1 = False
+while jump1 == True:
+    jump += jump3
+    height = jump - gravidade
+    if height <= 0:
+        gravidade = 0
+        height = 0
+        print(height)
+        break
+    jump3 -= 0.05
+    if jump3 <= 0:
+        jump3 = 0
+        gravidade += 0.3
+    print(height)
+jump1 = False
+print(" ")
+
+# class Pessoa:
+#     cpf = ""
+#     nome = ""
+#     idade = ""
+
+#     def __init__(self, cpf , nome, idade):
+#         self.cpf = cpf
+#         self.nome = nome
+#         self.idade = idade
+#     def mostrar_arquivos_pessoa(self):
+#         print(self.cpf)
+#         print(self.nome)
+#         print(self.idade, "\n")
+
+# pessoa1 = Pessoa(f"12321424", "alexandrexo", "23")
+# pessoa2 = Pessoa("83957343232", "alexandrexa", "20")
+# pessoa3 = Pessoa("010101011109", "alexandreko", "18")
+
+# pessoa1.mostrar_arquivos_pessoa()
+# pessoa2.mostrar_arquivos_pessoa()
+# pessoa3.mostrar_arquivos_pessoa()
+
+class Aluno:
+    cpf = ""
+    nome = ""
+    idade = ""
+    nota = []
+    matricula = ""
+    def __init__(self, cpf , nome, idade, nota, matricula):
+        self.cpf = cpf
+        self.nome = nome
+        self.idade = idade
+        self.nota = nota
+        self.matricula = matricula
+
+    def add_nota(self, nota):
+        self.nota.append(nota)
+
+    def calc_media(self, nota):
+        soma = 0
+        for nota in self.nota:
+            soma += nota
+        for nota in self.nota:
+            a += 1
+            soma / a
+    def mostrar_arquivos_aluno(self):
+        print(self.cpf)
+        print(self.nome)
+        print(self.idade)
+        print(self.notas)
+        print(self.matricula, "\n")
+
+aluno1 = Aluno("123123214", "alex", 113, [10, 8 , 9, 9.5, 2, 1.5, 0.5], 837213)
