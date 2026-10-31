@@ -1,0 +1,26 @@
+pi = 3.141592653589793
+gravidade = 0
+jump = 0.01
+jump3 = 1
+height = 0
+jump2 = input("Digite se vc quer que rode? (digite s para sim) ")
+if jump2 == "s":
+    jump1 = True
+    print(height)
+elif jump2 != "s":
+    jump1 = False
+while jump1 == True:
+    jump += jump3
+    height = jump - gravidade
+    if height <= 0:
+        gravidade = 0
+        height = 0
+        print(height)
+        break
+    jump3 -= 0.05
+    if jump3 <= 0:
+        jump3 = 0
+        gravidade += 0.3
+    print(height)
+jump1 = False
+print(" ")
