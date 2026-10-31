@@ -1,5 +1,5 @@
-import Carl.c as c
-import Carl.math as math
+import c as c
+import math as math
 pi = 3.141592653589793
 gravidade = 0
 jump = 0.01

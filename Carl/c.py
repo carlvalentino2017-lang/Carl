@@ -1,3 +1,3 @@
-import Carl.nome1 as nome1
-import Carl.math as math
+import nome1 as nome1
+import math as math
 print(nome1.pi)
