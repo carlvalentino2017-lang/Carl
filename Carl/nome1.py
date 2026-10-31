@@ -75,4 +75,6 @@ class Aluno:
         print(self.notas)
         print(self.matricula, "\n")
 
-aluno1 = Aluno("123123214", "alex", 113, [10, 8 , 9, 9.5, 2, 1.5, 0.5], 837213)
+aluno1 = Aluno("0000000002010", "alex", 113, [10, 8 , 9, 9.5, 2, 1.5, 0.5], 837213)
+aluno2 = Aluno("123123214", "alexander", 11, [1, 0 , , .5, 10, 9.5, 8.9], 837213)
+aluno3 = Aluno("1213214", "ana", 13, [10, 8 , 9, 9.5, 8, 7.5, 8.5], 837213)
